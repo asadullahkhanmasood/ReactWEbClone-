@@ -1,19 +1,13 @@
-import { useState } from 'react'
-import './App.css'
-import SideBar from './components/SideBar/SideBar'
-import React from 'react'
-import MainBody from './components/MainBody/MainBody'
-function App() {
+import "./App.css";
+import HomePage from "./components/CenterElement/HomePage/homepage";
+import { Route, Routes } from "react-router-dom";
 
+function App() {
   return (
-    <>
-<section className='flex relative '>
-     <SideBar/>
-  <MainBody/>
-  
-  </section>     
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
