@@ -1,11 +1,12 @@
-import SideBar from '../../SideBar/SideBar'
+import React from "react";
+import SideBar from "../SideBar/SideBar";
 import { Outlet } from 'react-router-dom'
 
 function HomePage() {
   return (
     <div className='flex'>
    <main className="flex flex-1 border m-1 mt-10 ml-10 px-10 gap-6">
-    <SideBar/>
+   
         <div className="react-compiler-docs flex-1">
           <div className="headingReact border text-2xl items-center justify-center flex">
             <h1 className="title">React Compiler</h1>
